@@ -6,4 +6,5 @@ urlpatterns = [
     path('syntaxes', syntaxes.list_syntaxes),
     path('snippet', snippet.create_update_snippet),
     path('snippet/<str:link>', snippet.get_snippet),
+    path('snippet/<str:link>/chmod', snippet.change_mode),
 ]
