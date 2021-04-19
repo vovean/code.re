@@ -108,7 +108,7 @@ class Snippet(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     token = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
-    syntax = models.CharField(max_length=20, choices=SyntaxChoices.choices)
+    syntax = models.CharField(max_length=30, choices=SyntaxChoices.choices)
     code = models.TextField()
     link = models.CharField(max_length=8, unique=True)
 
