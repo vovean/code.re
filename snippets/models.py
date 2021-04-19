@@ -61,22 +61,48 @@ class SnippetManager(models.Manager):
 
 class Snippet(models.Model):
     class SyntaxChoices(TextChoices):
-        BASH = "Bash"
-        C = "C"
-        C_SHARP = "C#"
-        CPP = "C++"
-        CSS = "CSS"
-        HTML = "HTML"
-        JSON = "JSON"
-        JAVA = "Java"
-        JAVASCRIPT = "JavaScript"
-        LUA = "Lua"
-        OBJECTIVE_C = "Objective C"
-        PHP = "PHP"
-        PERL = "Perl"
-        PYTHON = "Python"
-        RUBY = "Ruby"
-        SWIFT = "Swift"
+        CSRC = 'C'
+        CPPSRC = 'CPP'
+        CSHARP = 'C#'
+        CSS = 'CSS'
+        COMMON_LISP = 'Common Lisp'
+        DOCKERFILE = 'Dockerfile'
+        ERLANG = 'Erlang'
+        GO = 'GO'
+        GROOVY = 'Groovy'
+        HASKELL = 'Haskell'
+        HTML = 'HTML'
+        JAVA = 'Java'
+        JAVASCRIPT = 'JavaScript'
+        JSON = 'JSON'
+        TYPESCRIPT = 'TypeScript'
+        KOTLIN = 'Kotlin'
+        LUA = 'Lua'
+        MARKDOWN = 'Markdown'
+        OBJECTIVEC = 'Objective C'
+        PASCAL = 'Pascal'
+        PERL = 'Perl'
+        PHP = 'PHP'
+        POWERSHELL = 'PowerShell'
+        PROTOBUF = 'ProtoBuf'
+        PYTHON = 'Python'
+        RSRC = 'R'
+        RUBY = 'Ruby'
+        RST = 'reStructuredText'
+        RUSTSRC = 'Rust'
+        SASS = 'Sass'
+        SCALA = 'Scala'
+        SCSS = 'SCSS'
+        SH = 'Shell'
+        SWIFT = 'Swift'
+        SQL = 'SQL'
+        STEX = 'LaTeX'
+        TOML = 'TOML'
+        VB = 'VB.NET'
+        VUE = 'Vue.js app'
+        XML = 'XML'
+        WEBASSEMBLY = 'WebAssembly Text Format'
+        YAML = 'YAML'
 
     objects = SnippetManager()
 
